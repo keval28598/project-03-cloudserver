@@ -1,1 +1,13 @@
-node_modules/
+cat << 'EOF' >> .gitignore
+
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+crash.log
+*.tfvars
+
+# Node & build artifacts
+**/node_modules/
+*.zip
+EOF
